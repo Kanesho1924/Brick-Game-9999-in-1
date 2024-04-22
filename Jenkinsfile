@@ -23,9 +23,9 @@ pipeline {
             steps {
                 script {
                     if (isUnix()) {
-                        sh "${MAVEN_HOME}/bin/mvn -DskipTests clean package"
+                        sh "${MAVEN_HOME}/bin/mvn clean package"
                     } else {
-                        bat "${MAVEN_HOME}\\bin\\mvn -DskipTests clean package"
+                        bat "${MAVEN_HOME}\\bin\\mvn clean package"
                     }
                 }
             }
