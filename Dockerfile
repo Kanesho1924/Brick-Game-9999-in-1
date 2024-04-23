@@ -9,3 +9,4 @@ FROM adoptopenjdk:8-jdk-hotspot
 WORKDIR /app
 COPY --from=build /app/target/brick-game-0.3.0-SNAPSHOT.jar .
 CMD ["java", "-jar", "brick-game-0.3.0-SNAPSHOT.jar"]
+
